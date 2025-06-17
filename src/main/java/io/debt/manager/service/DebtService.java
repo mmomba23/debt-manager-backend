@@ -20,4 +20,13 @@ public class DebtService {
     public List<Debt> getDebts() {
         return debtRepository.getDebts();
     }
+
+    public Debt updateDebt(Debt debt) {
+        return debtRepository.update(debt);
+    }
+    @Transactional
+    public void deleteDebt(Integer id) {
+        Debt debt=Debt.findById(id);
+        debt.delete();
+    }
 }

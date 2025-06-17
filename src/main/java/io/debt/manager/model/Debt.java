@@ -13,18 +13,21 @@ public class Debt extends PanacheEntity {
     BigDecimal initialAmount,
     BigDecimal outstandingBalance,
     LocalDate dueDate,
-     boolean paid) {
+     boolean paid,BigDecimal interestRate) {
         this.creditor= creditor;
         this.description=  description;
         this.initialAmount=initialAmount;
         this.outstandingBalance=outstandingBalance;
         this.dueDate=dueDate;
         this.paid=paid;
+        this.interestRate=interestRate;
     }
     public String creditor;
     public String description;
     public BigDecimal initialAmount;
     public BigDecimal outstandingBalance;
+    public BigDecimal interestRate;
     public LocalDate dueDate;
     public boolean paid;
+
 }
