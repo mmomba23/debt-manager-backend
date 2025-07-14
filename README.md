@@ -19,6 +19,12 @@ A web app for securely tracking personal debts, payments, and outstanding balanc
 - Export to CSV
 - Notifications for due dates
 - Multi-currency
+## How to run the App
+You can run your application in dev mode that enables live coding using:
+
+```shell script
+./mvnw quarkus:dev
+```
 
 ## Data Model
 ### User
